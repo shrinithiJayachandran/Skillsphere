@@ -1,0 +1,14 @@
+function Searchbar({ search, setSearch }) {
+  return (
+    <input
+      className="search-input"
+      type="text"
+      placeholder="Search by name or description"
+      aria-label="Search skills"
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+    />
+  );
+}
+
+export default Searchbar;
